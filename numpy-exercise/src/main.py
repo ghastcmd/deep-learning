@@ -29,11 +29,9 @@ print('removed the nan values')
 without_nan_values = array_with_str[np.logical_not(np.isnan(array_with_str))]
 print(without_nan_values)
 
-arr = [1, 3, 2] [1, 3, 45] [3, 2, 1]
+arr = [1, 3, 2], [1, 3, 45], [3]
 
+print('Created simple array')
 messed_dimensions = np.array(arr)
-x_arr = np.zeros((3, 2, 2), dtype=int)
-print(x_arr)
-print(np.squeeze(x_arr))
 print(messed_dimensions)
 print(np.squeeze(messed_dimensions))
