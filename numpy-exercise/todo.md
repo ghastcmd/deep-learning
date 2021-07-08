@@ -1,9 +1,9 @@
 # NumPy Array
-- [ ] How to create an empty and a full NumPy array?
-- [ ] Create a Numpy array filled with all zeros
-- [ ] Create a Numpy array filled with all ones
-- [ ] Check whether a Numpy array contains a specified row
-- [ ] How to Remove rows in Numpy array that contains non-numeric values?
+- [x] How to create an empty and a full NumPy array?
+- [x] Create a Numpy array filled with all zeros
+- [x] Create a Numpy array filled with all ones
+- [x] Check whether a Numpy array contains a specified row
+- [x] How to Remove rows in Numpy array that contains non-numeric values?
 - [ ] Remove single-dimensional entries from the shape of an array
 - [ ] Find the number of occurrences of a sequence in a NumPy array
 - [ ] Find the most frequent value in a NumPy array
