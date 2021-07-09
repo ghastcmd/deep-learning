@@ -5,7 +5,7 @@
 - [x] Check whether a Numpy array contains a specified row
 - [x] How to Remove rows in Numpy array that contains non-numeric values?
 - [x] Remove single-dimensional entries from the shape of an array
-- [ ] Find the number of occurrences of a sequence in a NumPy array
+- [x] Find the number of occurrences of a sequence in a NumPy array
 - [ ] Find the most frequent value in a NumPy array
 - [ ] Combining a one and a two-dimensional NumPy Array
 - [ ] How to build an array of all combinations of two NumPy arrays?

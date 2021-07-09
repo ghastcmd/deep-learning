@@ -33,3 +33,8 @@ print(without_nan_values)
 arr = [[1, 4, 2, 3, 1]]
 messed_dimensions = np.array(arr)
 print(messed_dimensions.squeeze())
+
+# Finding the occurencies of a sequence in np array
+print(repr(messed_dimensions).count('1'))
+
+# 
