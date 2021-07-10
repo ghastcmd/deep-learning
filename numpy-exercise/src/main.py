@@ -30,11 +30,27 @@ without_nan_values = array_with_str[np.logical_not(np.isnan(array_with_str))]
 print(without_nan_values)
 
 # Remove single dimensional entries from the shape of an array
-arr = [[1, 4, 2, 3, 1]]
+arr = [[1, 4, 2, 3, 3, 1, 2, 3, 1, 3, 3, 3]]
 messed_dimensions = np.array(arr)
 print(messed_dimensions.squeeze())
 
 # Finding the occurencies of a sequence in np array
-print(repr(messed_dimensions).count('1'))
+print(repr(messed_dimensions).count('2, 3'))
+
+# Finding the most frequent value in np array
+curarr = messed_dimensions.squeeze()
+print(np.bincount(curarr).argmax())
+
+# Combining a two and one dimensional np array
+one_dim = np.array([1])
+two_dim = np.array([1, 2])
+print(np.concatenate([one_dim, two_dim]))
+
+# Create combinatory interpolation from two np arrays
+first_array = np.array([1, 3, 4])
+second_array = np.array([6, 7])
+fulled_array = np.array(np.meshgrid(second_array, first_array))
+fulled_array = fulled_array.reshape(-1, fulled_array[0].size).T
+print(fulled_array)
 
 # 
