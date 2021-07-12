@@ -40,12 +40,12 @@
 - [x] How to inverse a matrix using NumPy
 - [x] How to count the frequency of unique values in NumPy array?
 - [x] Multiply matrices of complex numbers using NumPy in Python
-- [ ] Compute the outer product of two given vectors using NumPy in Python
-- [ ] Calculate inner, outer, and cross products of matrices and vectors using NumPy
-- [ ] Compute the covariance matrix of two given NumPy arrays
-- [ ] Convert covariance matrix to correlation matrix using Python
-- [ ] Compute the Kronecker product of two mulitdimension NumPy arrays
-- [ ] Convert the matrix into a list
+- [x] Compute the outer product of two given vectors using NumPy in Python
+- [x] Calculate inner, outer, and cross products of matrices and vectors using NumPy
+- [x] Compute the covariance matrix of two given NumPy arrays
+- [x] Convert covariance matrix to correlation matrix using Python
+- [x] Compute the Kronecker product of two mulitdimension NumPy arrays
+- [x] Convert the matrix into a list
 
 # Questions on NumPy Indexing
 - [ ] Replace NumPy array elements that doesn’t satisfy the given condition

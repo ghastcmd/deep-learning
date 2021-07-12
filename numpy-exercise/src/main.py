@@ -185,3 +185,31 @@ first = np.array([[2 + 1j, 1 + 2j], [1, 2 + 4j]])
 second = np.array([[1 + 2j, 2 + 1j], [2 - 1j, 2 - 2j]])
 third = np.dot(first, second)
 print(third)
+
+# Outer product of two given vectors using NumPy
+first = np.arange(4)
+second = np.random.randint(3, size=4)
+third = np.outer(first, second)
+print(third)
+
+# Inner, outer and cross product
+mat = np.matrix(np.arange(16).reshape(4, 4))
+print('Different products mats')
+print(mat, '\n', third)
+print(np.inner(mat, third))
+print(np.cross(mat.reshape(-1, 2), third.reshape(-1, 2)))
+
+# Calculate the covariance matrix from two given arrays
+print(first, second)
+cov_mat = np.cov(first, second)
+print(cov_mat)
+
+# Convert covariance matrix to correlation matrix
+print(np.corrcoef(cov_mat))
+
+# Compute the kronecker product of two multidimension matrix
+print(np.kron(mat, np.corrcoef(cov_mat)))
+
+# Convert matrix into a list
+first_list = mat2.ravel().tolist()
+print(first_list)
