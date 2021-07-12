@@ -62,17 +62,17 @@
 - [x] Combined array index by index
 
 # Questions on NumPy Linear Algebra
-- [ ] Find a matrix or vector norm using NumPy
-- [ ] Calculate the QR decomposition of a given matrix using NumPy
-- [ ] Compute the condition number of a given matrix using NumPy
-- [ ] Compute the eigenvalues and right eigenvectors of a given square array using NumPy?
-- [ ] Calculate the Euclidean distance using NumPy
+- [x] Find a matrix or vector norm using NumPy
+- [x] Calculate the QR decomposition of a given matrix using NumPy
+- [x] Compute the condition number of a given matrix using NumPy
+- [x] Compute the eigenvalues and right eigenvectors of a given square array using NumPy?
+- [x] Calculate the Euclidean distance using NumPy
 
 # Questions on NumPy Random
-- [ ] Create a Numpy array with random values
-- [ ] How to choose elements from the list with different probability using NumPy?
-- [ ] How to get weighted random choice in Python?
-- [ ] Generate Random Numbers From The Uniform Distribution using NumPy
+- [x] Create a Numpy array with random values
+- [x] How to choose elements from the list with different probability using NumPy?
+- [x] How to get weighted random choice in Python?
+- [x] Generate Random Numbers From The Uniform Distribution using NumPy
 - [ ] Get Random Elements form geometric distribution
 - [ ] Get Random elements from Laplace distribution
 - [ ] Return a Matrix of random values from a uniform distribution

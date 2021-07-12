@@ -267,3 +267,45 @@ print(first)
 # Check elements present in the NumPy array
 print(1 in first)
 
+##### Numpy Linear algebra #####
+
+# Find the norm of a matrix or vector
+print(np.linalg.norm(first))
+
+# Calculate the QR decomposition of a given matrix
+q, r= np.linalg.qr(first)
+print('q=', q, '\nr=', r)
+
+# Compute the condition number of a given matrix
+print(np.linalg.cond(first))
+
+# Compute the eigenvalues and right eigenvectors of a given square array
+first = np.resize(first, (3,3))
+eig_vals, eig_vec = np.linalg.eig(first)
+print(eig_vals)
+print(eig_vec)
+
+# Calculating the euclidean distance using np
+first = np.resize(first, (1, 3))
+second = np.resize(second, (1, 3))
+distance = np.linalg.norm(first - second)
+print(distance)
+
+
+##### NumPy Random #####
+
+# Create a Numpy array with random values
+first = np.random.rand(12)
+print(first)
+
+# How to choose elements from the list with different probability using NumPy
+number = np.random.choice(first)
+print(number)
+
+# How to get weighted random choice in Python
+weights = np.array([1, 1, 1, 1, 1, 2, 2, 4, 1, 4, 1, 5])
+number = np.random.choice(first, p=weights/weights.sum())
+print(number)
+
+# Generate random numbers from the uniform distribution
+print(np.random.choice(10, 12))
