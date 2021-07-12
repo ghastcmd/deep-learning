@@ -309,3 +309,15 @@ print(number)
 
 # Generate random numbers from the uniform distribution
 print(np.random.choice(10, 12))
+
+# Get Random Elements from geometric distribution
+print(np.random.geometric(.2, 20))
+
+# Get Random Elements from laplace distribution
+print(np.random.laplace(0.0, 1.0, 10))
+
+# Return a Matrix of random values from a uniform distribution
+print(np.matrix(np.random.uniform(0, 1, 12)).reshape(3, 4))
+
+# Return a Matrix of random values from a Gaussian distribution
+print(np.matrix(np.random.normal(0, 1, 12)).reshape(3, 4))

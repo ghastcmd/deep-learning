@@ -73,10 +73,10 @@
 - [x] How to choose elements from the list with different probability using NumPy?
 - [x] How to get weighted random choice in Python?
 - [x] Generate Random Numbers From The Uniform Distribution using NumPy
-- [ ] Get Random Elements form geometric distribution
-- [ ] Get Random elements from Laplace distribution
-- [ ] Return a Matrix of random values from a uniform distribution
-- [ ] Return a Matrix of random values from a Gaussian distribution
+- [x] Get Random Elements form geometric distribution
+- [x] Get Random elements from Laplace distribution
+- [x] Return a Matrix of random values from a uniform distribution
+- [x] Return a Matrix of random values from a Gaussian distribution
 
 # Questions on NumPy Sorting and Searching
 - [ ] How to get the indices of the sorted array using NumPy in Python?
