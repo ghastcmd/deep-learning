@@ -4,7 +4,7 @@ This folder is to solve the problems in the exercise **Logistic Regression** fro
 
 The repository for the exercise can be found [here].
 
-[exercise]: <https://drive.google.com/file/d/1cuMcupGz2qqvESIb_r6oTTprwj4Gw1aS/view?usp=sharing>
+[exercise]: <https://github.com/tfvieira/deep-learning/blob/main/tasks/1%20Logistic%20Regression/Logistic%20Regression%20with%20a%20Neural%20Network%20mindset.pdf>
 
 [collab tutorial]: <https://colab.research.google.com/drive/1yb02TzGGigQlXJXKSiAaGJXGT9SSCUvO#scrollTo=vjpBpHu3mhMD>
 
