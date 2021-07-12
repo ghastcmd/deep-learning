@@ -105,3 +105,36 @@ first[6:9] = 0
 print(np.count_nonzero(first))
 
 # Counts the number of elements to a given axis
+axis = 0
+arr = np.array([[1, 2, 3], [3, 4, 5]])
+print(np.size(arr, axis))
+
+# Trim the trailing zeros from 1d array
+print(first)
+first[:2] = 0
+first[8:] = 0
+print(np.trim_zeros(first))
+
+# Change datatype for a given np array
+first.dtype = int
+print(first.dtype)
+first.dtype = float
+
+# Reverse a numpy array
+print(first[::-1])
+
+# Make np array read only
+first.flags.writeable = False
+print(first)
+
+
+
+###### Matrices ######
+
+# Getting the maximum value for a given matrix
+np.random.seed(0)
+mat = np.matrix(np.random.randint(24, size=12).reshape(3, 4))
+print(mat.max())
+
+# Getting the minimun value for a given matrix
+print(mat.min())

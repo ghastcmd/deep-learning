@@ -19,15 +19,15 @@
 - [x] Interchange two axes of an array
 - [x] NumPy – Fibonacci Series using Binet Formula
 - [x] Counts the number of non-zero values in the array
-- [ ] Count the number of elements along a given axis
-- [ ] Trim the leading and/or trailing zeros from a 1-D array
-- [ ] Change data type of given numpy array
-- [ ] Reverse a numpy array
-- [ ] How to make a NumPy array read-only?
+- [x] Count the number of elements along a given axis
+- [x] Trim the leading and/or trailing zeros from a 1-D array
+- [x] Change data type of given numpy array
+- [x] Reverse a numpy array
+- [x] How to make a NumPy array read-only?
 
 # Questions on NumPy Matrix
-- [ ] Get the maximum value from given matrix
-- [ ] Get the minimum value from given matrix
+- [x] Get the maximum value from given matrix
+- [x] Get the minimum value from given matrix
 - [ ] Find the number of rows and columns of a given matrix using NumPy
 - [ ] Select the elements from a given matrix
 - [ ] Find the sum of values in a matrix
