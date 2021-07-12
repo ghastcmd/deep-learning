@@ -213,3 +213,20 @@ print(np.kron(mat, np.corrcoef(cov_mat)))
 # Convert matrix into a list
 first_list = mat2.ravel().tolist()
 print(first_list)
+
+##### Numpy Indexing #####
+
+# Convert all values that doesn't satisfy the rule
+first[first < 2] = 0
+print(first)
+
+# Return the indices of elements where the given condition is satisfied
+indices = np.where(first > 2)[0]
+print(indices)
+
+# Replace NaN values with mean values of columns
+first = np.arange(30, dtype=float).reshape(5, 6)
+first[3,0:2] = np.NaN
+inds = np.where(np.isnan(first))
+first[inds] = np.take(np.nanmean(first, axis=0), inds[1])
+print(first)

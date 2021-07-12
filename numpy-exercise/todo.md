@@ -48,9 +48,9 @@
 - [x] Convert the matrix into a list
 
 # Questions on NumPy Indexing
-- [ ] Replace NumPy array elements that doesn’t satisfy the given condition
-- [ ] Return the indices of elements where the given condition is satisfied
-- [ ] Replace NaN values with average of columns
+- [x] Replace NumPy array elements that doesn’t satisfy the given condition
+- [x] Return the indices of elements where the given condition is satisfied
+- [x] Replace NaN values with average of columns
 - [ ] Replace negative value with zero in numpy array
 - [ ] How to get values of an NumPy array at certain index positions?
 - [ ] Find indices of elements equal to zero in a NumPy array
