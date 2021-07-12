@@ -53,4 +53,22 @@ fulled_array = np.array(np.meshgrid(second_array, first_array))
 fulled_array = fulled_array.reshape(-1, fulled_array[0].size).T
 print(fulled_array)
 
-# 
+# Adding border around np array
+border_array = np.ones((2,2))
+border_array = np.pad(border_array, pad_width=1, mode='constant', constant_values=0)
+print(border_array)
+
+# How to compare two np arrays
+first_array = np.ones(3)
+second_array = np.ones(3)
+second_array[1] = -1
+print(np.array_equal(first_array, second_array))
+
+# Wether values ara in array
+print(-1 in second_array)
+
+# Get 2D diagonals from 3D array
+arr = np.arange(3 * 3 * 3).reshape(3, 3, 3)
+diag_arr = np.diagonal(arr, axis1 = 1, axis2 = 2)
+print(diag_arr)
+

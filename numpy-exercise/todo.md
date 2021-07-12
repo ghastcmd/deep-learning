@@ -9,10 +9,10 @@
 - [x] Find the most frequent value in a NumPy array
 - [x] Combining a one and a two-dimensional NumPy Array
 - [x] How to build an array of all combinations of two NumPy arrays?
-- [ ] How to add a border around a NumPy array?
-- [ ] How to compare two NumPy arrays?
-- [ ] How to check whether specified values are present in NumPy array?
-- [ ] How to get all 2D diagonals of a 3D NumPy array?
+- [x] How to add a border around a NumPy array?
+- [x] How to compare two NumPy arrays?
+- [x] How to check whether specified values are present in NumPy array?
+- [x] How to get all 2D diagonals of a 3D NumPy array?
 - [ ] Flatten a Matrix in Python using NumPy
 - [ ] Flatten a 2d numpy array into 1d array
 - [ ] Move axes of an array to new positions
