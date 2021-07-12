@@ -81,7 +81,27 @@ flatten_arr = arr.reshape(1, -1)
 print(flatten_arr)
 
 # Move axes of an array to new position
-arr = np.zeros((2, 3, 4))
-print(np.moveaxis(arr, 0, -1).shape)
-print(np.moveaxis(arr, -1, 0).shape)
+arr = np.zeros((2, 2, 1))
+print(arr)
+print(np.moveaxis(arr, 0, -1))
 
+# Interchange two axis of an array
+arr = np.ones((2, 2, 1))
+changed_axis = np.swapaxes(arr, 0, -1)
+print(arr)
+print(changed_axis)
+
+# First 10 numbers using binet formula to find fibonacci
+sqrt5 = np.sqrt(5)
+alpha = (1 + sqrt5) / 2
+beta = (1 - sqrt5) / 2
+arrn = np.arange(1, 11)
+Fn = ((alpha ** arrn) - (beta ** arrn)) / sqrt5
+print(Fn)
+
+# Count the number of non-zero values in the array
+first = np.ones(11)
+first[6:9] = 0
+print(np.count_nonzero(first))
+
+# Counts the number of elements to a given axis

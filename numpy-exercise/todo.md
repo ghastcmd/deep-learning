@@ -15,10 +15,10 @@
 - [x] How to get all 2D diagonals of a 3D NumPy array?
 - [x] Flatten a Matrix in Python using NumPy
 - [x] Flatten a 2d numpy array into 1d array
-- [ ] Move axes of an array to new positions
-- [ ] Interchange two axes of an array
-- [ ] NumPy – Fibonacci Series using Binet Formula
-- [ ] Counts the number of non-zero values in the array
+- [x] Move axes of an array to new positions
+- [x] Interchange two axes of an array
+- [x] NumPy – Fibonacci Series using Binet Formula
+- [x] Counts the number of non-zero values in the array
 - [ ] Count the number of elements along a given axis
 - [ ] Trim the leading and/or trailing zeros from a 1-D array
 - [ ] Change data type of given numpy array
