@@ -79,12 +79,12 @@
 - [x] Return a Matrix of random values from a Gaussian distribution
 
 # Questions on NumPy Sorting and Searching
-- [ ] How to get the indices of the sorted array using NumPy in Python?
-- [ ] Finding the k smallest values of a NumPy array
-- [ ] How to get the n-largest values of an array using NumPy?
-- [ ] Sort the values in a matrix
-- [ ] Filter out integers from float numpy array
-- [ ] Find the indices into a sorted array
+- [x] How to get the indices of the sorted array using NumPy in Python?
+- [x] Finding the k smallest values of a NumPy array
+- [x] How to get the n-largest values of an array using NumPy?
+- [x] Sort the values in a matrix
+- [x] Filter out integers from float numpy array
+- [x] Find the indices into a sorted array
 
 # Questions on NumPy Mathematics
 - [ ] How to get element-wise true division of an array using Numpy?

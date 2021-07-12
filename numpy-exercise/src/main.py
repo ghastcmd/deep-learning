@@ -321,3 +321,34 @@ print(np.matrix(np.random.uniform(0, 1, 12)).reshape(3, 4))
 
 # Return a Matrix of random values from a Gaussian distribution
 print(np.matrix(np.random.normal(0, 1, 12)).reshape(3, 4))
+
+
+##### Numpy sorting and searching #####
+
+# How to get the indices of the sorted array using NumPy in Python
+first = np.rint(first * 10)
+sort_ind = np.argsort(first)
+print('The indices of a sorted array:', sort_ind)
+
+# Finding the k smallest values of a NumPy array
+k = first[np.where(sort_ind == 0)]
+print(first, 'The smallest is:', k.squeeze())
+
+# How to get the n-largest values of an array using NumPy
+n = 3
+print(first[np.where(sort_ind == first.size - n)].squeeze())
+
+# Sort the values in a matrix
+first = first.reshape(3, -1)
+print(np.sort(first))
+
+# Filter out integers from float numpy array
+first[1,2] = 1.2
+first[0,0] = 2.3
+print('The integers are:', first[first == first.astype(int)])
+print('The floats are:', first[first != first.astype(int)])
+
+# Find the indices into a sorted array
+second = np.sort(first.reshape(1, -1))
+print(np.argsort(second))
+
