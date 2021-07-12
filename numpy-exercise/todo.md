@@ -13,8 +13,8 @@
 - [x] How to compare two NumPy arrays?
 - [x] How to check whether specified values are present in NumPy array?
 - [x] How to get all 2D diagonals of a 3D NumPy array?
-- [ ] Flatten a Matrix in Python using NumPy
-- [ ] Flatten a 2d numpy array into 1d array
+- [x] Flatten a Matrix in Python using NumPy
+- [x] Flatten a 2d numpy array into 1d array
 - [ ] Move axes of an array to new positions
 - [ ] Interchange two axes of an array
 - [ ] NumPy – Fibonacci Series using Binet Formula

@@ -72,3 +72,16 @@ arr = np.arange(3 * 3 * 3).reshape(3, 3, 3)
 diag_arr = np.diagonal(arr, axis1 = 1, axis2 = 2)
 print(diag_arr)
 
+# Flatten matrix into array
+m = np.matrix([[1,2,3], [4,5,6]])
+print(m.flatten())
+
+# Flatten 2d np array into 1d array
+flatten_arr = arr.reshape(1, -1)
+print(flatten_arr)
+
+# Move axes of an array to new position
+arr = np.zeros((2, 3, 4))
+print(np.moveaxis(arr, 0, -1).shape)
+print(np.moveaxis(arr, -1, 0).shape)
+
