@@ -230,3 +230,40 @@ first[3,0:2] = np.NaN
 inds = np.where(np.isnan(first))
 first[inds] = np.take(np.nanmean(first, axis=0), inds[1])
 print(first)
+
+# Replace negative values with zero in np array
+first = first.ravel()[:15]
+first[4:7] = [-1, -2, -10]
+first[first < 0] = 0
+print(first)
+
+# How to get values of an NumPy array at certain index positions
+inds = [1, 3, 6]
+print(first[inds])
+
+# Indices of elements with zero as value
+inds = np.where(first == 0)
+print(inds[0])
+
+# Remove column with non numeric values in np array
+first = first.reshape(-1, 3)
+first[2,2] = np.nan
+first = np.delete(first, np.where(np.isnan(first))[1], axis=1)
+print(first)
+
+# Access differente rows of multidimensional np array
+rows = [1, 3]
+second = first[rows]
+print(second)
+
+# Get row numbers of np array having elements larger than x
+x = 1
+print(np.where(np.any(first > x, axis=1))[0])
+
+# Get filled the diagonals of the numpy array
+np.fill_diagonal(first, 111)
+print(first)
+
+# Check elements present in the NumPy array
+print(1 in first)
+

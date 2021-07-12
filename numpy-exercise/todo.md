@@ -51,15 +51,15 @@
 - [x] Replace NumPy array elements that doesn’t satisfy the given condition
 - [x] Return the indices of elements where the given condition is satisfied
 - [x] Replace NaN values with average of columns
-- [ ] Replace negative value with zero in numpy array
-- [ ] How to get values of an NumPy array at certain index positions?
-- [ ] Find indices of elements equal to zero in a NumPy array
-- [ ] How to Remove columns in Numpy array that contains non-numeric values?
-- [ ] How to access different rows of a multidimensional NumPy array?
-- [ ] Get row numbers of NumPy array having element larger than X
-- [ ] Get filled the diagonals of NumPy array
-- [ ] Check elements present in the NumPy array
-- [ ] Combined array index by index
+- [x] Replace negative value with zero in numpy array
+- [x] How to get values of an NumPy array at certain index positions?
+- [x] Find indices of elements equal to zero in a NumPy array
+- [x] How to Remove columns in Numpy array that contains non-numeric values?
+- [x] How to access different rows of a multidimensional NumPy array?
+- [x] Get row numbers of NumPy array having element larger than X
+- [x] Get filled the diagonals of NumPy array
+- [x] Check elements present in the NumPy array
+- [x] Combined array index by index
 
 # Questions on NumPy Linear Algebra
 - [ ] Find a matrix or vector norm using NumPy
