@@ -28,18 +28,18 @@
 # Questions on NumPy Matrix
 - [x] Get the maximum value from given matrix
 - [x] Get the minimum value from given matrix
-- [ ] Find the number of rows and columns of a given matrix using NumPy
-- [ ] Select the elements from a given matrix
-- [ ] Find the sum of values in a matrix
-- [ ] Calculate the sum of the diagonal elements of a NumPy array
-- [ ] Adding and Subtracting Matrices in Python
-- [ ] Ways to add row/columns in numpy array
-- [ ] Matrix Multiplication in NumPy
-- [ ] Get the eigen values of a matrix
-- [ ] How to Calculate the determinant of a matrix using NumPy?
-- [ ] How to inverse a matrix using NumPy
-- [ ] How to count the frequency of unique values in NumPy array?
-- [ ] Multiply matrices of complex numbers using NumPy in Python
+- [x] Find the number of rows and columns of a given matrix using NumPy
+- [x] Select the elements from a given matrix
+- [x] Find the sum of values in a matrix
+- [x] Calculate the sum of the diagonal elements of a NumPy array
+- [x] Adding and Subtracting Matrices in Python
+- [x] Ways to add row/columns in numpy array
+- [x] Matrix Multiplication in NumPy
+- [x] Get the eigen values of a matrix
+- [x] How to Calculate the determinant of a matrix using NumPy?
+- [x] How to inverse a matrix using NumPy
+- [x] How to count the frequency of unique values in NumPy array?
+- [x] Multiply matrices of complex numbers using NumPy in Python
 - [ ] Compute the outer product of two given vectors using NumPy in Python
 - [ ] Calculate inner, outer, and cross products of matrices and vectors using NumPy
 - [ ] Compute the covariance matrix of two given NumPy arrays

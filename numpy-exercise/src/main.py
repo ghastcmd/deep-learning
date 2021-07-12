@@ -138,3 +138,50 @@ print(mat.max())
 
 # Getting the minimun value for a given matrix
 print(mat.min())
+
+# Finding the number of rows and columns for a given matrix
+print('rows=', mat.shape[0], 'columns=', mat.shape[1])
+
+# Create a slice from a given matrix
+s_slice = mat[2,2:]
+print(s_slice)
+
+# Finding the sum of values of a matrix
+print(mat.sum())
+
+# Finding the sum of diagonal of a matrix
+print(mat.diagonal().sum())
+
+# Adding or subtracting matrices in python
+mat2 = np.matrix(np.random.randint(24, size=12).reshape(3, 4))
+mat3 = mat + mat2
+print(mat3)
+
+# Ways to add row/column in np array
+mat = np.concatenate((mat, np.array([[1,2,3,4]])))
+mat = np.concatenate((mat, np.vstack([1,2,3,4])), axis=1)
+print(mat)
+
+# Multiply matrices in python
+mat2 = mat2.T * mat3
+print(mat2)
+
+# Get aigen values for a given matrix
+print(np.linalg.eigvals(mat2))
+
+# Determinant of matrix using np
+print(np.linalg.det(mat2))
+
+# Inverse of matrix using np
+print(np.linalg.inv(mat2))
+
+# Frequency of unique values inside of matrix
+mat2 = np.matrix(np.random.randint(4, size=12).reshape(3, 4))
+unique = np.unique(mat2)
+print(unique)
+
+# Multiply matrices of complex numbers using NumPy in Python
+first = np.array([[2 + 1j, 1 + 2j], [1, 2 + 4j]])
+second = np.array([[1 + 2j, 2 + 1j], [2 - 1j, 2 - 2j]])
+third = np.dot(first, second)
+print(third)
