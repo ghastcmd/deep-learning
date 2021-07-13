@@ -546,7 +546,7 @@ print(first)
 
 # Convert an image to NumPy array and save it to CSV file using Python
 from PIL import Image
-image = Image.open('4 leaf clover.jpg')
+image = Image.open('images/4 leaf clover.jpg')
 arr = np.asarray(image)
 arr = arr.reshape(arr.shape[0], arr.shape[1] * arr.shape[2])
 np.savetxt('image.csv', arr, delimiter=',')
