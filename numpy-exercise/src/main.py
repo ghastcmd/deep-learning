@@ -544,4 +544,28 @@ print(arr)
 np.savetxt('data.csv', first, delimiter=',')
 print(first)
 
-# 
+# Convert an image to NumPy array and save it to CSV file using Python
+from PIL import Image
+image = Image.open('4 leaf clover.jpg')
+arr = np.asarray(image)
+arr = arr.reshape(arr.shape[0], arr.shape[1] * arr.shape[2])
+np.savetxt('image.csv', arr, delimiter=',')
+
+# Save np array to text file
+np.savetxt('file.txt', first)
+
+# Load from text file
+another = np.loadtxt('file.txt')
+print(np.array_equal(another, first))
+
+# Plot line graph from np array
+import matplotlib.pyplot as plt
+plt.title('line graph')
+plt.plot(np.arange(12).reshape(3, 4), first, color='red')
+plt.show()
+
+# Create histogram using np array
+first = np.arange(6)
+# plt.bar(np.arange(len(first) * 2) / 2, first)
+plt.bar(first, height = 100)
+plt.show()

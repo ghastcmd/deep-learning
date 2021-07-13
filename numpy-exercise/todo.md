@@ -138,13 +138,14 @@
 - [x] Count the number of substrings in an array
 - [x] Find the lowest index of the substring in an array
 - [x] Get the boolean array when values end with a particular character
+
 # More Questions on NumPy
 - [x] Different ways to convert a Python dictionary to a NumPy array
 - [x] How to convert a list and tuple into NumPy arrays?
 - [x] Ways to convert array of strings to array of floats
 - [x] Convert a NumPy array into a csv file
-- [ ] How to Convert an image to NumPy array and save it to CSV file using Python?
-- [ ] How to save a NumPy array to a text file?
-- [ ] Load data from a text file
-- [ ] Plot line graph from NumPy array
+- [x] How to Convert an image to NumPy array and save it to CSV file using Python?
+- [x] How to save a NumPy array to a text file?
+- [x] Load data from a text file
+- [x] Plot line graph from NumPy array
 - [ ] Create Histogram using NumPy
