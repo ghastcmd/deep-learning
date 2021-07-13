@@ -566,6 +566,5 @@ plt.show()
 
 # Create histogram using np array
 first = np.arange(6)
-# plt.bar(np.arange(len(first) * 2) / 2, first)
 plt.bar(first, height = 100)
 plt.show()
