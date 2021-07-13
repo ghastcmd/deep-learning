@@ -409,3 +409,68 @@ print(np.sqrt(second))
 # Evaluate Einstein’s summation convention of two multidimensional NumPy arrays
 print(np.einsum('mk,kn', first, first.T))
 
+
+##### Statistical part numpy #####
+
+# Compute the median of the flattened NumPy array
+print(np.median(first.ravel()))
+
+# Find Mean of a List of Numpy Array
+print(np.mean(first.ravel()))
+
+# Calculate the mean of array ignoring the NaN value
+first = first.ravel()
+print(np.mean(first[first != np.nan]))
+
+# Get the mean value from given matrix
+first = first.reshape(3, -1)
+print(np.mean(first))
+
+# Compute the variance of the NumPy array
+first = first.ravel()
+print(np.var(first))
+
+# Compute the standard deviation of the NumPy array
+print(np.std(first))
+
+# Compute pearson product-moment correlation coefficients of two given NumPy arrays
+print(np.corrcoef(arr1, arr2))
+
+# Calculate the mean across dimension in a 2D NumPy array
+# Just calcualte the mean of a matrix and specify the different axis
+first = first.reshape(3,-1)
+print(np.mean(first, axis=1))
+
+# Calculate the average, variance and standard deviation in Python using NumPy
+# The variance and standard deviation is alredy made before, so i'll just put the average
+print(np.average(first))
+
+# Describing the array in python would be just to print all the functions return in
+# a organizerd manner, so I'll pass this one because it's just to print it pretty
+
+
+##### Questions on Polynomial #####
+
+# Define a polynomial function
+poly = np.polynomial.Polynomial([31, 3, 2])
+print(poly)
+
+# How to add one polynomial to another using NumPy in Python
+poly2 = np.polynomial.Polynomial([1, 1, 3])
+print(poly + poly2)
+
+# How to subtract one polynomial to another using NumPy in Python
+print(poly - poly2)
+
+# How to multiply a polynomial to another using NumPy in Python
+print(poly * poly2)
+
+# How to divide a polynomial to another using NumPy in Python
+arr1 = np.polynomial.Polynomial([1, 2])
+arr2 = np.polynomial.Polynomial([2, 2])
+print(arr1 // arr2)
+
+# Find the roots of the polynomials using NumPy
+print(np.roots([31, 3, 2]))
+
+# 

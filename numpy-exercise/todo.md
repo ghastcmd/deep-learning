@@ -104,24 +104,24 @@
 - [x] Evaluate Einstein’s summation convention of two multidimensional NumPy arrays
 
 # Questions on NumPy Statistics
-- [ ] Compute the median of the flattened NumPy array
-- [ ] Find Mean of a List of Numpy Array
-- [ ] Calculate the mean of array ignoring the NaN value
-- [ ] Get the mean value from given matrix
-- [ ] Compute the variance of the NumPy array
-- [ ] Compute the standard deviation of the NumPy array
-- [ ] Compute pearson product-moment correlation coefficients of two given NumPy arrays
-- [ ] Calculate the mean across dimension in a 2D NumPy array
-- [ ] Calculate the average, variance and standard deviation in Python using NumPy
-- [ ] Describe a NumPy Array in Python
+- [x] Compute the median of the flattened NumPy array
+- [x] Find Mean of a List of Numpy Array
+- [x] Calculate the mean of array ignoring the NaN value
+- [x] Get the mean value from given matrix
+- [x] Compute the variance of the NumPy array
+- [x] Compute the standard deviation of the NumPy array
+- [x] Compute pearson product-moment correlation coefficients of two given NumPy arrays
+- [x] Calculate the mean across dimension in a 2D NumPy array
+- [x] Calculate the average, variance and standard deviation in Python using NumPy
+- [x] Describe a NumPy Array in Python
 
 # Questions on Polynomial
-- [ ] Define a polynomial function
-- [ ] How to add one polynomial to another using NumPy in Python?
-- [ ] How to subtract one polynomial to another using NumPy in Python?
-- [ ] How to multiply a polynomial to another using NumPy in Python?
-- [ ] How to divide a polynomial to another using NumPy in Python?
-- [ ] Find the roots of the polynomials using NumPy
+- [x] Define a polynomial function
+- [x] How to add one polynomial to another using NumPy in Python?
+- [x] How to subtract one polynomial to another using NumPy in Python?
+- [x] How to multiply a polynomial to another using NumPy in Python?
+- [x] How to divide a polynomial to another using NumPy in Python?
+- [x] Find the roots of the polynomials using NumPy
 - [ ] Evaluate a 2-D polynomial series on the Cartesian product
 - [ ] Evaluate a 3-D polynomial series on the Cartesian product
 
