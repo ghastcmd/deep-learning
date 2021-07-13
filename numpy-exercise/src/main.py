@@ -481,3 +481,67 @@ print(poly.polynomial.polygrid2d(arr1, arr2, poly2))
 # Evaluate a 3-D polynomial series on the Cartesian product
 print(poly.polynomial.polygrid3d(arr1, arr2, [3, 2], poly2))
 
+
+##### Questions on NumPy Strings #####
+
+# Repeat all the elements of a NumPy array of strings
+arr = np.array(['Banana', 'Manga', 'Flor', 'Macaco'])
+print(np.char.multiply(arr, 2))
+
+# How to split the element of a given NumPy array with spaces
+arr = np.array(['Semi Automatico', 'Coisa Alheia', 'Outra Coisa'])
+print(np.char.split(arr))
+
+# How to insert a space between characters of all the elements of a given NumPy array
+print(np.char.join(' ', arr))
+
+# Find the length of each string element in the Numpy array
+print(np.vectorize(len)(arr))
+
+# Swap the case of an array of string
+print(np.char.swapcase(arr))
+
+# Change the case to uppercase of elements of an array
+print(np.char.upper(arr))
+
+# Change the case to lowercase of elements of an array
+print(np.char.lower(arr))
+
+# Join String by a seperator
+print(np.char.join('.', arr))
+
+# Check if two same shaped string arrays one by one
+print(np.array_equal(arr, arr))
+
+# Count the number of substrings in an array
+print(np.char.count(arr, ' '))
+
+# Find the lowest index of the substring in an array
+print(np.char.find(arr, ' '))
+
+# Get the boolean array when values end with a particular character
+print(np.char.endswith(arr, 'o'))
+
+
+##### More Questions on Numpy #####
+
+# Different ways to convert a Python dictionary to a NumPy array
+simple_dict = {'aaa': 333, 'bbb': 666}
+keys = np.fromiter(simple_dict.keys(), dtype=(str, 3))
+values = np.fromiter(simple_dict.values(), dtype=int)
+print(keys, values)
+
+# How to convert a list and tuple into NumPy arrays
+# The list conversion is already done extensively into this files, so I'll only do the tuple
+tuple_list = (3, 1, 3, 3, 1, 2, 3)
+print(np.array(tuple_list))
+
+# Ways to convert array of strings to array of floats
+arr = np.array(['1.3', '3.1321', '1.23131', '93.234']).astype(float)
+print(arr)
+
+# Convert a NumPy array into a csv file
+np.savetxt('data.csv', first, delimiter=',')
+print(first)
+
+# 

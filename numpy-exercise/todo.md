@@ -126,23 +126,23 @@
 - [x] Evaluate a 3-D polynomial series on the Cartesian product
 
 # Questions on NumPy Strings
-- [ ] Repeat all the elements of a NumPy array of strings
-- [ ] How to split the element of a given NumPy array with spaces?
-- [ ] How to insert a space between characters of all the elements of a given NumPy array?
-- [ ] Find the length of each string element in the Numpy array
-- [ ] Swap the case of an array of string
-- [ ] Change the case to uppercase of elements of an array
-- [ ] Change the case to lowercase of elements of an array
-- [ ] Join String by a seperator
-- [ ] Check if two same shaped string arrayss one by one
-- [ ] Count the number of substrings in an array
-- [ ] Find the lowest index of the substring in an array
-- [ ] Get the boolean array when values end with a particular character
-- [ ] More Questions on NumPy
-- [ ] Different ways to convert a Python dictionary to a NumPy array
-- [ ] How to convert a list and tuple into NumPy arrays?
-- [ ] Ways to convert array of strings to array of floats
-- [ ] Convert a NumPy array into a csv file
+- [x] Repeat all the elements of a NumPy array of strings
+- [x] How to split the element of a given NumPy array with spaces?
+- [x] How to insert a space between characters of all the elements of a given NumPy array?
+- [x] Find the length of each string element in the Numpy array
+- [x] Swap the case of an array of string
+- [x] Change the case to uppercase of elements of an array
+- [x] Change the case to lowercase of elements of an array
+- [x] Join String by a seperator
+- [x] Check if two same shaped string arrays one by one
+- [x] Count the number of substrings in an array
+- [x] Find the lowest index of the substring in an array
+- [x] Get the boolean array when values end with a particular character
+# More Questions on NumPy
+- [x] Different ways to convert a Python dictionary to a NumPy array
+- [x] How to convert a list and tuple into NumPy arrays?
+- [x] Ways to convert array of strings to array of floats
+- [x] Convert a NumPy array into a csv file
 - [ ] How to Convert an image to NumPy array and save it to CSV file using Python?
 - [ ] How to save a NumPy array to a text file?
 - [ ] Load data from a text file
