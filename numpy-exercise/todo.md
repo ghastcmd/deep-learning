@@ -122,8 +122,8 @@
 - [x] How to multiply a polynomial to another using NumPy in Python?
 - [x] How to divide a polynomial to another using NumPy in Python?
 - [x] Find the roots of the polynomials using NumPy
-- [ ] Evaluate a 2-D polynomial series on the Cartesian product
-- [ ] Evaluate a 3-D polynomial series on the Cartesian product
+- [x] Evaluate a 2-D polynomial series on the Cartesian product
+- [x] Evaluate a 3-D polynomial series on the Cartesian product
 
 # Questions on NumPy Strings
 - [ ] Repeat all the elements of a NumPy array of strings

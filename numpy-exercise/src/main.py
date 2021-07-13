@@ -449,28 +449,35 @@ print(np.average(first))
 # a organizerd manner, so I'll pass this one because it's just to print it pretty
 
 
+import numpy.polynomial as poly
+
 ##### Questions on Polynomial #####
 
 # Define a polynomial function
-poly = np.polynomial.Polynomial([31, 3, 2])
-print(poly)
+poly1 = poly.Polynomial([31, 3, 2])
+print(poly1)
 
 # How to add one polynomial to another using NumPy in Python
-poly2 = np.polynomial.Polynomial([1, 1, 3])
-print(poly + poly2)
+poly2 = poly.Polynomial([1, 1, 3])
+print(poly1 + poly2)
 
 # How to subtract one polynomial to another using NumPy in Python
-print(poly - poly2)
+print(poly1 - poly2)
 
 # How to multiply a polynomial to another using NumPy in Python
-print(poly * poly2)
+print(poly1 * poly2)
 
 # How to divide a polynomial to another using NumPy in Python
-arr1 = np.polynomial.Polynomial([1, 2])
-arr2 = np.polynomial.Polynomial([2, 2])
+arr1 = poly.Polynomial([1, 2])
+arr2 = poly.Polynomial([2, 2])
 print(arr1 // arr2)
 
 # Find the roots of the polynomials using NumPy
 print(np.roots([31, 3, 2]))
 
-# 
+# Evaluate a 2-D polynomial series on the Cartesian product
+print(poly.polynomial.polygrid2d(arr1, arr2, poly2))
+
+# Evaluate a 3-D polynomial series on the Cartesian product
+print(poly.polynomial.polygrid3d(arr1, arr2, [3, 2], poly2))
+
