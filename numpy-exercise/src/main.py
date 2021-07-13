@@ -352,3 +352,60 @@ print('The floats are:', first[first != first.astype(int)])
 second = np.sort(first.reshape(1, -1))
 print(np.argsort(second))
 
+
+##### Mathmatics using numpy #####
+
+# How to get element-wise true division of an array using Numpy
+first = first.ravel()
+print(np.true_divide(first, 10))
+
+# How to calculate the element-wise absolute value of NumPy array
+first[3:7] *= -1
+print(np.absolute(first))
+
+# Compute the negative of the NumPy array
+second = first[:] * -1
+print(second)
+
+# Multiply 2d numpy array corresponding to 1d array
+first = first.reshape(3, -1)
+second = np.array([1.2, 1.1, 2.3, 1])
+print(first * second)
+
+# Computes the inner product of two arrays
+print(np.inner(first, second))
+
+# Compute the nth percentile of the NumPy array
+print(np.percentile(second, 30))
+
+# Calculate the n-th order discrete difference along the given axis
+print(np.diff(second, n=2))
+
+# Calculate the sum of all columns in a 2D NumPy array
+print(np.sum(first, axis=0))
+
+# Calculate average values of two given NumPy arrays
+arr1 = np.array([1,3])
+arr2 = np.array([2,1])
+print((arr1 + arr2) / 2)
+
+# How to compute numerical negative value for all elements in a given NumPy array
+print(np.negative(second))
+
+# How to get the floor, ceiling and truncated values of the elements of a numpy array
+print(np.floor(second))
+print(np.ceil(second))
+print(np.trunc(second))
+
+# Get the round number close to the nearest integer
+print(np.rint(second))
+
+# Getting the round of values from a matrix
+print(first.round())
+
+# Determine the positive square-root of an array
+print(np.sqrt(second))
+
+# Evaluate Einstein’s summation convention of two multidimensional NumPy arrays
+print(np.einsum('mk,kn', first, first.T))
+

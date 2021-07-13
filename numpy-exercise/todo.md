@@ -87,21 +87,21 @@
 - [x] Find the indices into a sorted array
 
 # Questions on NumPy Mathematics
-- [ ] How to get element-wise true division of an array using Numpy?
-- [ ] How to calculate the element-wise absolute value of NumPy array?
-- [ ] Compute the negative of the NumPy array
-- [ ] Multiply 2d numpy array corresponding to 1d array
-- [ ] Computes the inner product of two arrays
-- [ ] Compute the nth percentile of the NumPy array
-- [ ] Calculate the n-th order discrete difference along the given axis
-- [ ] Calculate the sum of all columns in a 2D NumPy array
-- [ ] Calculate average values of two given NumPy arrays
-- [ ] How to compute numerical negative value for all elements in a given NumPy array?
-- [ ] How to get the floor, ceiling and truncated values of the elements of a numpy array?
-- [ ] How to round elements of the NumPy array to the nearest integer?
-- [ ] Find the round off the values of the given matrix
-- [ ] Determine the positive square-root of an array
-- [ ] Evaluate Einstein’s summation convention of two multidimensional NumPy arrays
+- [x] How to get element-wise true division of an array using Numpy?
+- [x] How to calculate the element-wise absolute value of NumPy array?
+- [x] Compute the negative of the NumPy array
+- [x] Multiply 2d numpy array corresponding to 1d array
+- [x] Computes the inner product of two arrays
+- [x] Compute the nth percentile of the NumPy array
+- [x] Calculate the n-th order discrete difference along the given axis
+- [x] Calculate the sum of all columns in a 2D NumPy array
+- [x] Calculate average values of two given NumPy arrays
+- [x] How to compute numerical negative value for all elements in a given NumPy array?
+- [x] How to get the floor, ceiling and truncated values of the elements of a numpy array?
+- [x] How to round elements of the NumPy array to the nearest integer?
+- [x] Find the round off the values of the given matrix
+- [x] Determine the positive square-root of an array
+- [x] Evaluate Einstein’s summation convention of two multidimensional NumPy arrays
 
 # Questions on NumPy Statistics
 - [ ] Compute the median of the flattened NumPy array
