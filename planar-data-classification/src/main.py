@@ -395,3 +395,5 @@ plt.title("Decision Boundary for hidden layer size " + str(4))
 # Print accuracy
 predictions = predict(parameters, X)
 print ('Accuracy: %d' % float((np.dot(Y,predictions.T) + np.dot(1-Y,1-predictions.T))/float(Y.size)*100) + '%')
+
+plt.show()
