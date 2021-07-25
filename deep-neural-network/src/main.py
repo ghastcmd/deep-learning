@@ -90,3 +90,145 @@ print("W1 = " + str(parameters["W1"]))
 print("b1 = " + str(parameters["b1"]))
 print("W2 = " + str(parameters["W2"]))
 print("b2 = " + str(parameters["b2"]))
+
+# GRADED FUNCTION: linear_forward
+
+def linear_forward(A, W, b):
+    """
+    Implement the linear part of a layer's forward propagation.
+
+    Arguments:
+    A -- activations from previous layer (or input data): (size of previous layer, number of examples)
+    W -- weights matrix: numpy array of shape (size of current layer, size of previous layer)
+    b -- bias vector, numpy array of shape (size of the current layer, 1)
+
+    Returns:
+    Z -- the input of the activation function, also called pre-activation parameter 
+    cache -- a python tuple containing "A", "W" and "b" ; stored for computing the backward pass efficiently
+    """
+    
+    ### START CODE HERE ### (≈ 1 line of code)
+    Z = np.dot(W, A) + b
+    ### END CODE HERE ###
+    
+    assert(Z.shape == (W.shape[0], A.shape[1]))
+    cache = (A, W, b)
+    
+    return Z, cache
+
+A, W, b = linear_forward_test_case()
+
+# print("\nA_prev (n_[l-1], m) = \n", A)
+# print("\nW (n_l, n_[l-1]) = \n", W)
+# print("\nb = \n", b)
+# print("\n")
+
+Z, linear_cache = linear_forward(A, W, b)
+
+print("\nA_prev (n_l, n_[l-1]) = \n", linear_cache[0])
+print("\nW = \n", linear_cache[1])
+print("\nb = \n", linear_cache[2])
+print("\n")
+
+print("Z = " + str(Z))
+
+# GRADED FUNCTION: linear_activation_forward
+
+def linear_activation_forward(A_prev, W, b, activation):
+    """
+    Implement the forward propagation for the LINEAR->ACTIVATION layer
+
+    Arguments:
+    A_prev -- activations from previous layer (or input data): (size of previous layer, number of examples)
+    W -- weights matrix: numpy array of shape (size of current layer, size of previous layer)
+    b -- bias vector, numpy array of shape (size of the current layer, 1)
+    activation -- the activation to be used in this layer, stored as a text string: "sigmoid" or "relu"
+
+    Returns:
+    A -- the output of the activation function, also called the post-activation value 
+    cache -- a python tuple containing "linear_cache" and "activation_cache";
+             stored for computing the backward pass efficiently
+    """
+    
+    if activation == "sigmoid":
+        # Inputs: "A_prev, W, b". Outputs: "A, activation_cache".
+        ### START CODE HERE ### (≈ 2 lines of code)
+        Z, linear_cache = linear_forward(A_prev, W, b)
+        A, activation_cache = sigmoid(Z)
+        ### END CODE HERE ###
+    
+    elif activation == "relu":
+        # Inputs: "A_prev, W, b". Outputs: "A, activation_cache".
+        ### START CODE HERE ### (≈ 2 lines of code)
+        Z, linear_cache = linear_forward(A_prev, W, b)
+        A, activation_cache = relu(Z)
+        ### END CODE HERE ###
+    
+    assert (A.shape == (W.shape[0], A_prev.shape[1]))
+    cache = (linear_cache, activation_cache)
+
+    return A, cache
+
+A_prev, W, b = linear_activation_forward_test_case()
+
+A, linear_activation_cache = linear_activation_forward(A_prev, W, b, activation = "sigmoid")
+print("With sigmoid: A = " + str(A))
+
+A, linear_activation_cache = linear_activation_forward(A_prev, W, b, activation = "relu")
+print("With ReLU: A = " + str(A))
+
+print("\nA = \n", linear_activation_cache[0][0])
+print("\nW = \n", linear_activation_cache[0][1])
+print("\nb = \n", linear_activation_cache[0][2])
+print("\nZ = \n", linear_activation_cache[1][0])
+print("\n\n")
+
+# GRADED FUNCTION: L_model_forward
+
+def L_model_forward(X, parameters):
+    """
+    Implement forward propagation for the [LINEAR->RELU]*(L-1)->LINEAR->SIGMOID computation
+    
+    Arguments:
+    X -- data, numpy array of shape (input size, number of examples)
+    parameters -- output of initialize_parameters_deep()
+    
+    Returns:
+    AL -- last post-activation value
+    caches -- list of caches containing:
+                every cache of linear_activation_forward() (there are L-1 of them, indexed from 0 to L-1)
+    """
+
+    caches = []
+    A = X
+    L = len(parameters) // 2                  # number of layers in the neural network
+    
+    # Implement [LINEAR -> RELU]*(L-1). Add "cache" to the "caches" list.
+    for l in range(1, L):
+        A_prev = A 
+        ### START CODE HERE ### (≈ 2 lines of code)
+        A, cache = linear_activation_forward(A_prev, parameters['W' + str(l)], parameters['b' + str(l)], 'relu')
+        caches.append(cache)
+        ### END CODE HERE ###
+    
+    # Implement LINEAR -> SIGMOID. Add "cache" to the "caches" list.
+    ### START CODE HERE ### (≈ 2 lines of code)
+    AL, cache = linear_activation_forward(A, parameters['W' + str(L)], parameters['b' + str(L)], 'sigmoid')
+    caches.append(cache)
+    ### END CODE HERE ###
+    
+    assert(AL.shape == (1,X.shape[1]))
+            
+    return AL, caches
+
+X, parameters = L_model_forward_test_case_2hidden()
+AL, caches = L_model_forward(X, parameters)
+print("AL = " + str(AL))
+print("Length of caches list = " + str(len(caches)))
+
+for l in range(len(caches)):
+    print("\nLayer ", l+1, "------------------------------------------%\n")
+    print("\nA^[", l  ,"] = \n", caches[l][0][0])
+    print("\nW^[", l+1,"] = \n", caches[l][0][1])
+    print("\nb^[", l+1,"] = \n", caches[l][0][2])
+    print("\nZ^[", l+1,"] = \n", caches[l][1][0])
