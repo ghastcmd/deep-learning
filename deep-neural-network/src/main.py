@@ -232,3 +232,33 @@ for l in range(len(caches)):
     print("\nW^[", l+1,"] = \n", caches[l][0][1])
     print("\nb^[", l+1,"] = \n", caches[l][0][2])
     print("\nZ^[", l+1,"] = \n", caches[l][1][0])
+
+# GRADED FUNCTION: compute_cost
+
+def compute_cost(AL, Y):
+    """
+    Implement the cost function defined by equation (7).
+
+    Arguments:
+    AL -- probability vector corresponding to your label predictions, shape (1, number of examples)
+    Y -- true "label" vector (for example: containing 0 if non-cat, 1 if cat), shape (1, number of examples)
+
+    Returns:
+    cost -- cross-entropy cost
+    """
+    
+    m = Y.shape[1]
+
+    # Compute loss from aL and y.
+    ### START CODE HERE ### (≈ 1 lines of code)
+    cost = - (1/m) * (Y * np.log(AL) + (1 - Y) * np.log(1 - AL)).sum()
+    ### END CODE HERE ###
+    
+    cost = np.squeeze(cost)      # To make sure your cost's shape is what we expect (e.g. this turns [[17]] into 17).
+    assert(cost.shape == ())
+    
+    return cost
+
+Y, AL = compute_cost_test_case()
+
+print("cost = " + str(compute_cost(AL, Y)))
